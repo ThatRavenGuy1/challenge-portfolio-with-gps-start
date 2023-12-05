@@ -1,0 +1,110 @@
+@import "https://fonts.googleapis.com/css?family=Arvo";
+
+.g-base {
+  background-color: #035074;
+  color: #FFFFFF;
+  font-family: arial,verdana,sans-serif;
+  font-size: 1rem;
+  padding: 10px; 
+}
+
+main {
+  display:grid;
+  grid-template-columns: 200px 4fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+s-navigation {
+  margin-top:20px;
+  margin-right:20px;
+}
+
+header {
+  grid-column-start:1;
+  grid-column-end:3;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.g-heading {
+  font-size:3rem;
+  font-weight:bold;
+  font-family: "Arvo", sans-serif;
+  opacity:0.5;
+  margin-bottom:3px;
+}
+
+.g-sub-heading {
+  font-size:1rem;
+  letter-spacing:3px;
+}
+
+select {
+  font-family:arial,verdana,sans-serif;
+  font-size:1rem;
+  color:#035074;
+  border:2px solid #FFFFFF;
+  padding:2px 5px 2px 5px;
+  height:32px;
+  width:200px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline:none;
+}
+
+#p-content {  
+  margin-top:20px;
+}
+
+.s-title {
+  font-family: "Arvo", sans-serif;
+  font-size:1.5rem;
+  padding-bottom:10px;
+}
+
+.s-description {
+  padding-bottom:20px;
+  max-width:500px;
+}
+
+.iconset {
+  padding-top:20px;
+}
+
+.icon {
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 50px
+}
+
+.icon:nth-of-type(1) {
+  border-radius: 10px;
+  width: 100px;
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    gap: 0px;
+  }
+
+  header {
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+
+  .description {
+    max-width:100%;
+  }
+}
